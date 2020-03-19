@@ -1,0 +1,27 @@
+body{
+    font-family: Montserrat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.primary-title{
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.primary-desc{
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.overlay{
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.79);
+}

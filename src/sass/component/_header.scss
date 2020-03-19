@@ -1,0 +1,33 @@
+.sticky{
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    padding: 15px 0px;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00967f;
+    padding: 0px;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        color: #fff;
+        font-size: 2.5em;
+        line-height: 1.6;
+        
+    }
+    &__navlink{
+        margin:0 10px;
+        .nav-link{
+            color:#fff !important;
+        }
+    }
+}
