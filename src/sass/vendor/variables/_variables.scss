@@ -1,0 +1,28 @@
+$fa-font-path: "../fonts";
+// Grid settings
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
+$container-max-widths: (md: 720px, lg: 960px, xl: 1200px) !default;
+// colors
+$primary-theme: #00967f;
+$bg-background:#f7f7f7;
+$black: #6c6c6c;
+$white:#fff;
+$grey:#5E5E5E;
+$ash:#ccc;
+$table-border: #ababab;
+$off-white:#EDEDED;
+$scrollbar:#c1c1c1;
+$link-active:#e1e1e1;
+$link-color:#2e2e2e;
+$submenu-bg:#514f50;
+$table-striped-color:#D8DFE5;
+$table-border-color:#ffffff;
+// alasala website
+$theme-colors: ("primary": $primary-theme, "secondary": $secondary-theme);
+
+
+$primry-font:'HelveticaNeue-Light';
+$arbic-font:'GESSTwoLight-Light',
+sans-serif;
+$primry-font-bold:'HelveticaNeue-Bold';

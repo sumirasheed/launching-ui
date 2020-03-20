@@ -8,7 +8,7 @@
         padding: 25% 0 30% 0;
         color: #fff;
         &-lalign{
-            padding: 0 40px;
+            padding: 40px 0;
             position: relative;
         }
         &-ralign{
@@ -39,13 +39,38 @@
     
 }
 .banner-processor{
-    background-image: url(../../assets/images/electronics-projects.jpg);
+    background-image: url(../../assets/images/test-equipment-banner.jpg);
     &__detail{
         margin-top: 5rem;
         font-size: 1rem;
         line-height: 2em;
     }
+    .overlay{
+        content: "";
+        position: absolute;
+        left: 0; 
+        top: 0;
+        background: rgba(0, 0, 0, 0.79);
+    }
 }
 .banner-camera{
     background-image: url(../../assets/images/camera.jpg);
+}
+
+.banner-display{
+    background-attachment:initial;
+    background-image: url(../../assets/images/section25.jpg);
+    height: 100vh;
+    &__desc{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 50px auto;
+        h2{
+            font-weight: bold;
+            max-width: 275px;
+            padding-bottom: 0;
+
+        }
+    }
 }

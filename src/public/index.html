@@ -8,36 +8,39 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.min.css">
+    
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mobile Launching</title>
 </head>
 
 <body>
-    <header class="sticky" id="header">
+    <header class="sticky">
         <div class="container">
-            <div class="main-header">
-                <div>
-                    <a href="#" class="main-header__logo">POLO</a>
+            <div class="header">
+                <div class="header__logo">
+                    <a href="#">POLO</a>
                 </div>
-                <div class="main-header__nav">
+                <div class="header__nav">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler header__hammburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </button>
                         
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active main-header__navlink">
+                                <li class="nav-item active header__navlink">
                                     <a class="nav-link" href="#">Home</a>
                                 </li>
-                                <li class="nav-item main-header__navlink">
+                                <li class="nav-item header__navlink">
                                     <a class="nav-link" href="#">Mi Phones</a>
                                 </li>
-                                <li class="nav-item main-header__navlink">
+                                <li class="nav-item header__navlink">
                                     <a class="nav-link" href="#">Accessories</a>
                                 </li>
-                                <li class="nav-item main-header__navlink">
+                                <li class="nav-item header__navlink">
                                     <a class="nav-link" href="#">Contact</a>
                                 </li>
                             
@@ -46,72 +49,267 @@
                         </div>
                     </nav>
                 </div>
+            </div>    
+        </div>
+    </header>
+    <main class="main">
+        <div class="section">
+            <section class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="banner__desc">
+                                <h1 class="primary-title" data-aos="fade-down" data-aos-duration="1000">It's Amazing</h1>
+                                <p class="primary-desc" data-aos="fade-right" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="banner__image-container" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="assets/images/iphone_hand.png" alt="hand-image" class="banner__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-down">
+                    <a href="javascript:void(0)"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>
+                </div>
+            </section>
+            <section class="banner-image banner-processor">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="banner__desc banner__desc-lalign  ">
+                        <h2 class="" data-aos="fade-up" data-aos-duration="1000">Qualcomm® Snapdragon™ 855</h2>
+                        <P class="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Power in performance</P>
+                        <div class="banner-processor__detail" data-aos="fade-up" data-aos-duration="1000">
+                            <p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-image banner-camera">
+                <div class="container">
+                    <div class="banner__desc banner__desc-ralign">
+                        <h2 data-aos="fade-up" data-aos-duration="1000">48MP AI Triple Rear camera</h2>
+                        <P data-aos="fade-up" data-aos-duration="1000">The formidable combination of a 48MP Sony IMX586 ultra high-resolution sensor, a 13MP 124.8° FOV ultra-wide angle camera and a third 8MP telephoto camera delivers crystal clear pictures no matter what the scene. You can zoom effortlessly from 0.6x to 2x to capture </P>
+                    </div>
+                </div>
+            </section>
+            <section class="sliderContent">
+                <div class="container-fluid">
+                    <div class="slider sliderContent__slide">
+                        <div class="sliderContent__slideImageContainer">
+                            <img class="sliderContent__slideImage" src="assets/images/1.jpeg" alt="slider1">
+                        </div>
+                        <div class="sliderContent__slideImageContainer">
+                            <img class="sliderContent__slideImage" src="assets/images/2.jpg" alt="slider2">
+                        </div>
+                        <div class="sliderContent__slideImageContainer">
+                            <img class="sliderContent__slideImage" src="assets/images/3.jpg" alt="slider3">
+                        </div>
+                        <div class="sliderContent__slideImageContainer" >
+                            <img class="sliderContent__slideImage" src="assets/images/2.jpg" alt="slider2">
+                        </div>
+                        <div class="sliderContent__slideImageContainer">
+                            <img class="sliderContent__slideImage" src="assets/images/5.jpg" alt="slider3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cameraSpec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="cameraSpec__desc">
+                                <h2 class="" data-aos="fade-down" data-aos-duration="1000">20MP Pop-up camera</h2>
+                                <p class="primary-desc" data-aos="fade-up" data-aos-duration="1000">The 20MP selfie camera pops up smoothly once the camera app is open.
+                                        This leaves ample room for the magnanimous display. The pop-up can be
+                                        customised with 6 sound effects.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cameraSpec__image"  data-aos="fade-up" data-aos-duration="1500">
+                                <img src="assets/images/camera1.jpg" alt="popup-camera">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="videoSpec">
+                <div class="container">
+                    <div class="videoSpec__desc" data-aos="fade-left" data-aos-duration="1000">
+                        <h2>4K Video recording capability</h2>
+                        <p>Shoot cinematic 4K videos at 60fps with lifelike details and smooth motion. Based on the scene
+                            you can also choose to shoot the video through ultra-wide or telephoto mode for enhanced flexibility.</p>
+                    </div>
+                    <div class="videoSpec__video">
+                        <div class="aspect-ratio">
+                            <iframe id='video' name='video' src='about:blank' frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        
+                        <a href="https://www.youtube.com/embed/lJIrF4YjHfQ?autoplay=1&cc_load_policy=1&controls=2&hl=en&rel=0&enablejsapi=1&origin=https%3A%2F%2Fsupport.google.com&widgetid=1" class="video-link">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="OfferSpec">
+                <div class="container">
+                    <h1 class="OfferSpec__title" data-aos="fade-down" data-aos-duration="1000">Bluetooth HeadPhone</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="OfferSpec__image" data-aos="fade-left" data-aos-duration="1000">
+                                <img src="assets/images/bluetooth.png" class="img-responsive" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="OfferSpec__desc" data-aos="fade-left" data-aos-duration="1000">
+                                <h2 class="secondary-title">Why Choose The Product</h2>
+                                <p class="secondary-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+            <section class="headsetSpec">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <div class="OfferSpec__desc OfferSpec__desc-card OfferSpec__desc-arrowright" data-aos="fade-up" data-aos-duration="1000">
+                                <h4 class="secondary-title mb-2">Why Choose The Product</h4>
+                                <p class="secondary-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 headsetSpec__image-container">
+                            <div class="OfferSpec__image" data-aos="fade-down-right" data-aos-duration="1000">
+                                    <img src="assets/images/image2.png" class="img-responsive" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 headsetSpec__image-container">
+                            <div class="OfferSpec__image" data-aos="fade-down-left" data-aos-duration="1000">
+                                    <img src="assets/images/image3.jpg" class="img-responsive" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="OfferSpec__desc OfferSpec__desc-card OfferSpec__desc-arrowleft" data-aos="fade-up" data-aos-duration="1000">
+                                <h4 class="secondary-title  mb-2">Why Choose The Product</h4>
+                                <p class="secondary-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-image banner-display">
+                <div class="container">
+                    <div class="banner-display__desc">
+                        <h2 class="primary-title" data-aos="fade-up" data-aos-duration="1000">Redmi Note 9 Pro</h2>
+                        <p class="primary-desc" data-aos="fade-up" data-aos-duration="1000">The Alpha Flagship</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-section__mail">
+                            <div class="footer-section__mail-introduction">
+                                <h3>LET'S STAY IN TOUCH</h3>
+                                <p>Get updates on sales specials and more</p>
+                            </div>
+                            <div class="footer-section__mail-action">
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <input type="email" class="form-control" placeholder="Enter Your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-section__social-icons">
+                            <ul class="nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>
-    </header>
-    <main>
-        <section class="banner">
+        <div class="footer-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="banner__desc">
-                            <h1 class="primary-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">It's Amazing</h1>
-                            <p class="primary-desc" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </div>
+                    <div class="col-md-3">
+                        <h4>SUPPORT</h4>
+                        <ul class="">
+                            <li><a href="">Online Help</a></li>
+                            <li><a href="">Customer Service</a></li>
+                            <li><a href="">Shipping FAQ</a></li>
+                            <li><a href="">Service Centres</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-6">
-                        <div class="banner__image-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-                            <img src="assets/images/iphone_hand.png" alt="hand-image" class="banner__image">
-                        </div>
+                    <div class="col-md-3">
+                        <h4>SHOP AND LEARN</h4>
+                        <ul class="">
+                            <li><a href="">Mi MIX Alpha</a></li>
+                            <li><a href="">Redmi Y3</a></li>
+                            <li><a href="">Redmi 7 / Redmi 8</a></li>
+                            <li><a href="">Note 8 Pro</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>ABOUT US</h4>
+                        <ul class="">
+                            <li><a href="">User Agreement</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Integrity & Compliance</a></li>
+                            <li><a href="">TV Quality</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>CONTACT US</h4>
+                        <ul class="">
+                            <li><a href="">Email</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="banner-image banner-processor">
-            <div class="overlay"></div>
+        </div>
+        <div class="footer-bottom">
             <div class="container">
-                <div class="banner__desc banner__desc-lalign" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-                    <h2>Qualcomm® Snapdragon™ 855</h2>
-                    <P>Power in performance</P>
-                    <div class="banner-processor__detail">
-                        <p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    </div>
+                <div class="footer-copyright">
+                        Copyright © 2010 - 2020. All Rights Reserved
                 </div>
             </div>
-        </section>
-        <section class="banner-image banner-camera">
-            <div class="container">
-                <div class="banner__desc banner__desc-ralign" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-                    <h2>48MP AI Triple Rear camera</h2>
-                    <P>The formidable combination of a 48MP Sony IMX586 ultra high-resolution sensor, a 13MP 124.8° FOV ultra-wide angle camera and a third 8MP telephoto camera delivers crystal clear pictures no matter what the scene. You can zoom effortlessly from 0.6x to 2x to capture </P>
-                </div>
-            </div>
-        </section>
-        <section class="sliderContent">
-            <div class="container-fluid">
-                <div class="slider sliderContent__slide">
-                    <div class="sliderContent__slideImageContainer">
-                        <img class="sliderContent__slideImage" src="assets/images/1.jpeg" alt="slider1">
-                    </div>
-                    <div class="sliderContent__slideImageContainer">
-                        <img class="sliderContent__slideImage" src="assets/images/2.jpg" alt="slider2">
-                    </div>
-                    <div class="sliderContent__slideImageContainer">
-                        <img class="sliderContent__slideImage" src="assets/images/3.jpg" alt="slider3">
-                    </div>
-                    <div class="sliderContent__slideImageContainer" >
-                        <img class="sliderContent__slideImage" src="assets/images/2.jpg" alt="slider2">
-                    </div>
-                    <div class="sliderContent__slideImageContainer">
-                        <img class="sliderContent__slideImage" src="assets/images/5.jpg" alt="slider3">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer></footer>
+        </div>
+    </footer>
+    <div class="scroll-top">
+        <!-- Return to Top -->
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    </div>
     <!-- Scripts -->
     <script src="scripts/vendor.js"></script>
     <script src="scripts/main.js"></script>
