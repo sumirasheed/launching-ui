@@ -5,14 +5,7 @@
     padding: 15px 0px;
     transition: all 0.5s;
     z-index: 99999;
-    // @include mq($until:tablet){
-      .container{
-        padding-left: 0;
-        .navbar{
-          padding-left:0;
-        }
-      }
-    // }
+  
     @include mq($until:992px){
         position: fixed;
         top: 0;
@@ -34,7 +27,13 @@
     @include flex;
     justify-content: space-between;
     align-items: center;
-    
+    width:100%;
+    .navbar-nav{
+      margin-left:auto;
+      @include mq($until:992px){
+        margin-top: 40px;
+      }
+    }
     &__logo{
         a{
             color: #fff;
@@ -61,6 +60,7 @@
             }
         }
     }
+    
     &__hammburger{
       width: 30px;
       height: 20px;
@@ -70,12 +70,8 @@
       align-items: center;
       justify-content: center;
       transform: rotate(0);
-      @include transition(.5s, ease-in-out);
+      @include transition(.5s ease-in-out);
       @include rotate(0);
-      // -webkit-transition: .5s ease-in-out;
-      // -moz-transition: .5s ease-in-out;
-      // -o-transition: .5s ease-in-out;
-      // transition: .5s ease-in-out;
       cursor: pointer;
 
       span{
@@ -104,7 +100,10 @@
       }
       &.open{
         margin-bottom:10px;
-      
+        position: absolute;
+        top: -17px;
+        margin: 20px 0;
+        height: 40px;
         span:nth-child(1) {
           top: 18px;
           @include rotate(135);
@@ -122,29 +121,27 @@
 }
 
 
-#nav-icon1 span:nth-child(1) {
-  top: 0px;
-}
 
-#nav-icon1 span:nth-child(2) {
-  top: 18px;
-}
-
-#nav-icon1 span:nth-child(3) {
-  top: 36px;
-}
-
-#nav-icon1.open span:nth-child(1) {
-  top: 18px;
-  @include rotate(135);
-}
-
-#nav-icon1.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-#nav-icon1.open span:nth-child(3) {
-  top: 18px;
-  @include rotate(-135);
+#nav-icon1{
+  span:nth-child(1) {
+    top: 0px;
+  }
+  span:nth-child(2) {
+    top: 18px;
+  }
+  span:nth-child(3) {
+    top: 36px;
+  }
+  &.open span:nth-child(1) {
+    top: 18px;
+    @include rotate(135);
+  }
+  &.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  &.open span:nth-child(3) {
+    top: 18px;
+    @include rotate(-135);
+  }
 }

@@ -1,7 +1,7 @@
 .footer-section{
     padding:40px 0;
     &__mail{
-        @include mq($from:tablet){
+        @include mq($from:768px){
             @include flex;
             flex-wrap: nowrap;
         }
@@ -32,7 +32,7 @@
        
     }
     &__social-icons{
-        @include mq($until:tablet){
+        @include mq($until:768px){
             display: flex;
             justify-content: center;
         }
@@ -44,6 +44,9 @@
         .nav-item{
             margin: 0 10px;
             background-color: $primary-theme;
+            &:hover{
+                background-color: #0f6f61;
+            }
             .nav-link{
                 color:white;
             }
