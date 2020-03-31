@@ -4,7 +4,7 @@
     padding-bottom: 80px;
     background-attachment: fixed;
     position: relative;
-    &__slideImageContainer{
+    &__imageContainer{
         margin:0 20px;
         height: 300px;
     }
@@ -16,31 +16,26 @@
 }
 
 .cameraSpec{
-    background-image: url('../../../assets/images/section14.jpg');
-    padding-top: 80px;
-    background-attachment: fixed;
-    position: relative;
    
+    &_bg{
+        padding-bottom: 0;
+        background-image: url('../../../assets/images/section14.jpg');
+    }
     &__desc{
         max-width: 530px;
     }
+}
+.popup{
     &__image{
-        
-        img{
-            padding: 20px 30px 0;
-            display: block;
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-        }
+        padding: 20px 30px 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 }
 .videoSpec{
     background-image: url('../../../assets/images/section16.jpg');
-    padding-bottom:80px;
-    padding-top:80px;
-    background-position: center;
-    background-size: cover;
     &__desc{
         margin-bottom:3rem;
         max-width: 530px;
@@ -49,48 +44,54 @@
     &__video{
         background-image: url(../../../assets/images/videobg.jpg);
         background-repeat: no-repeat;
-        padding: 60px;
         position: relative;
         max-width: 600px;
         margin: 0 auto;
-        background-size: contain;
-        position: relative;
+        background-size: cover;
         .aspect-ratio {
             position: relative;
-            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 */
             height: 0;
-            padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
-            iframe {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                left: 0;
-                top: 0;
-              }
-        }
-        a{
-            position: absolute;
-            left:50%;
-            transform: translate(-50%,-50%);
-            top:50%;
-            margin:0 auto;
-            i{
-                color: #faf2f5e3;
-                font-size: 70px;
-            }
         }
     }
+}
+
+.video{
+    
+    &__frame{
+        top: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__link{
+        position: absolute;
+        left:50%;
+        transform: translate(-50%,-50%);
+        top:50%;
+        margin:0 auto;
+        i{
+            color: #faf2f5e3;
+            font-size: 60px;
+        }
+    }
+    
 }
 
 .OfferSpec{
     background-color: #f7f7f9;
     padding: 80px 0;
     &__title{
-        color:#00967f;
+        color:$primary-theme;
         margin-bottom: 3.5rem;
         text-align:center;
     }
     &__desc{
+        @include mq($until:tablet){
+            margin-bottom:30px;
+        }
         &-card{
             border: 1px solid #e6f0fa;
             padding: 40px;
@@ -140,6 +141,15 @@
             @include flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    @include mq($until:tablet){
+        &__order{
+            order:0;
+        }
+        &__image-container{
+            order:1;
         }
     }
 }

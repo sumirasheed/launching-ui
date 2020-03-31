@@ -5,6 +5,22 @@
     padding: 15px 0px;
     transition: all 0.5s;
     z-index: 99999;
+    // @include mq($until:tablet){
+      .container{
+        padding-left: 0;
+        .navbar{
+          padding-left:0;
+        }
+      }
+    // }
+    @include mq($until:992px){
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #00967f;
+        padding: 15px 0;
+    }
 }
 .fixed{
     position: fixed;
@@ -18,6 +34,7 @@
     @include flex;
     justify-content: space-between;
     align-items: center;
+    
     &__logo{
         a{
             color: #fff;

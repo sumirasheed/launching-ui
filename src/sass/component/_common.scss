@@ -21,6 +21,9 @@ button{
     border: none;
     outline: none;
 }
+button:focus{
+    outline: none;
+}
 .primary-title{
     font-size: 40px;
     font-weight: 300;

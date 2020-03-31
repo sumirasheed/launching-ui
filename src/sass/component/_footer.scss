@@ -1,41 +1,50 @@
 .footer-section{
     padding:40px 0;
     &__mail{
-        display: flex;
-        flex-wrap: nowrap;
-        &-introduction{
-           
-            h3{
+        @include mq($from:tablet){
+            @include flex;
+            flex-wrap: nowrap;
+        }
+        
+        .mail{
+            &__title{
                 font-size:1rem;
                 color: #212121a6;
                 font-weight: 600;
             }
-            p{
+            &__desc{
                 color:black;
                 font-size: 13px;
             }
-        }
-        &-action{
-           input{
-            padding: 20px 18px;
-           }
-           button{
-               border-color:#ccc
-           }
-            input,button{
-                border-radius:0;
+            &-action{
+                &__enter{
+                 padding: 20px 18px;
+                }
+                &__submit{
+                    border-color:#ccc
+                }
+                &__enter,&__submit{
+                     border-radius:0;
+                 }
             }
         }
+        
        
     }
     &__social-icons{
-        ul{
+        @include mq($until:tablet){
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__icons{
+        .nav{
             float: right;
         }
         .nav-item{
             margin: 0 10px;
             background-color: $primary-theme;
-            a{
+            .nav-link{
                 color:white;
             }
         }
@@ -43,26 +52,34 @@
 
     
 }
+
 .footer-nav{
     background-color: #212121;
     padding: 40px 0 60px;
-    h4{
+}
+
+.foot-nav{
+    &__title{
         font-size:0.9rem;
         color:#b0b0b0;
         font-weight: bold;
     }
-    ul{
+    &__list{
         list-style-type: none;
         padding-left: 0;
-    }
-    li{
+    }   
+    &__li{
         margin: 5px 0;
     }
-    a{
+    &__link{
         color: #b0b0b0;
         font-size:12px;
+        &:hover{
+            color: #00967f;
+        }
     }
 }
+
 .footer-bottom{
     background-color: #212121;
     line-height: 70px;

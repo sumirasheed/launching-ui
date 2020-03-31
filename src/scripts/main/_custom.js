@@ -5,13 +5,16 @@ let animation = () =>{
 
 //sticky header
 let stickyHeader = () => {
-    $(window).scroll(function(){
+    if($(window).width() > 992){
+      $(window).scroll(function(){
         var sticky = $('.sticky'),
             scroll = $(window).scrollTop();
       
         if (scroll >= 50) sticky.addClass('fixed');
         else sticky.removeClass('fixed');
-    });
+      });
+    }
+    
 }
 
 //slider 
@@ -24,22 +27,16 @@ let slickCarousel = () =>{
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
+     
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
-        }
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -64,15 +61,32 @@ let scrollDown = () => {
 //scroll top function
 let scrollTop = () => {
   $(window).scroll(function() {
-      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-          $('#return-to-top').fadeIn(200);    // Fade in the arrow
+      if ($(this).scrollTop() >= 50) {        
+          $('#return-to-top').fadeIn(200);    
       } else {
-          $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+          $('#return-to-top').fadeOut(200);   
       }
   });
-  $('#return-to-top').click(function() {      // When arrow is clicked
+  $('#return-to-top').click(function() {     
       $('body,html').animate({
-          scrollTop : 0                       // Scroll to top of body
+          scrollTop : 0                      
       }, 500);
+  });
+}
+
+let clickIcon = () =>{
+  //hamgurger open click
+  $('.header__hammburger').click(function(){
+    $(this).toggleClass('open');
+  });
+}
+
+let playVideo = () =>{
+    //video play function
+    $('.video__link').on('click',function(e){
+    e.preventDefault();
+      $('#video')[0].src = $(this).attr('href');
+      $(this).find('i').css('display','none');
+     
   });
 }

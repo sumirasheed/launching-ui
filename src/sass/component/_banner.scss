@@ -1,17 +1,22 @@
 .banner{
-    background: url(../../assets/images/bg.jpg);
     background-size: cover;
     padding-top: 80px;
+    padding-bottom: 80px;
     background-attachment: fixed;
     position: relative;
+
+    &_bg{
+        background: url(../../assets/images/bg.jpg);
+        padding-bottom: 0;
+    }
     &__desc{
         padding: 25% 0 30% 0;
         color: #fff;
-        &-lalign{
+        &_lalign{
             padding: 40px 0;
             position: relative;
         }
-        &-ralign{
+        &_ralign{
             left: 0;
             top: 2rem;
             max-width: 313px;
@@ -29,48 +34,45 @@
             overflow: hidden;
         }
     }
-}
-.banner-image{
-    background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-attachment: fixed;
-    position: relative;
+    &-processor{
+        background-image: url(../../assets/images/test-equipment-banner.jpg);
+        &__detail{
+            margin-top: 5rem;
+            font-size: 1rem;
+            line-height: 2em;
+        }
+        .overlay{
+            content: "";
+            position: absolute;
+            left: 0; 
+            right: 0;
+            top: 0; 
+            bottom: 0;
+            background: rgba(0,0,0,.5);
+        }
+    }
+    &-camera{
+        background-image: url(../../assets/images/camera.jpg);
+    }
+    &-display{
+        background-attachment:initial;
+        background-image: url(../../assets/images/section25.jpg);
+        height: 100vh;
+        @include mq($until:tablet){
+            background-position: center;
+        }
+        &__desc{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 50px auto;
+            h2{
+                font-weight: bold;
+                max-width: 275px;
+                padding-bottom: 0;
     
-}
-.banner-processor{
-    background-image: url(../../assets/images/test-equipment-banner.jpg);
-    &__detail{
-        margin-top: 5rem;
-        font-size: 1rem;
-        line-height: 2em;
-    }
-    .overlay{
-        content: "";
-        position: absolute;
-        left: 0; 
-        top: 0;
-        background: rgba(0, 0, 0, 0.79);
-    }
-}
-.banner-camera{
-    background-image: url(../../assets/images/camera.jpg);
-}
-
-.banner-display{
-    background-attachment:initial;
-    background-image: url(../../assets/images/section25.jpg);
-    height: 100vh;
-    &__desc{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        margin: 50px auto;
-        h2{
-            font-weight: bold;
-            max-width: 275px;
-            padding-bottom: 0;
-
+            }
         }
     }
 }
+
